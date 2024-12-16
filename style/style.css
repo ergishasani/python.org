@@ -310,6 +310,7 @@ header {
     width: 100%;
     height: 200vh;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
@@ -378,14 +379,6 @@ header {
     margin-top: 1rem;
 }
 
-/* General Row Styling */
-.row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-/* Latest News Styles */
 .latest-news {
     display: flex;
     flex-direction: column;
@@ -425,7 +418,6 @@ header {
     text-decoration: underline;
 }
 
-/* Upcoming Events Styles */
 .upcoming-events {
     display: flex;
     flex-direction: column;
@@ -465,7 +457,6 @@ header {
     text-decoration: underline;
 }
 
-/* General Section Styling */
 .success-stories,
 .use-python {
     border-top: 0.5rem solid #3776ab;
@@ -485,7 +476,6 @@ header {
 }
 
 
-/* Success Stories */
 .success-stories,
 .use-python {
     width: 41%;
@@ -516,7 +506,6 @@ header {
     text-decoration: underline;
 }
 
-/* Use Python For... */
 
 .use-python-list {
     list-style: none;
@@ -541,4 +530,185 @@ header {
     background-color: #e6e6e6;
     border-radius: 0.3rem;
     font-size: 1.2rem;
+}
+
+
+/* Container */
+.psf-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #2b5b88, #2f6fa3);
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+}
+
+.psf-content {
+    max-width: 60%;
+}
+
+.psf-title {
+    font-size: 2.5rem;
+    color: #ffcc33;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.psf-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.psf-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.psf-link {
+    color: #ffcc33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.psf-link:hover {
+    text-decoration: underline;
+}
+
+
+.psf-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.psf-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffcc33;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.psf-button:hover {
+    background-color: #f4b400;
+}
+
+
+.psf-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+/* Footer Container */
+.site-footer {
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Columns */
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+}
+
+.footer-column {
+    width: 14%;
+    min-width: 200px;
+    margin-bottom: 1.5rem;
+
+}
+
+.footer-column h3 {
+    color: #4a73c9;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.footer-column ul {
+    list-style: none;
+    width: fit-content;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    width: fit-content;
+}
+
+.footer-column a:hover {
+    color: #4a73c9;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom .status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer-copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-blue {
+    max-width: 100%;
+    background-color: #2f6fa3;
+    color: white;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
