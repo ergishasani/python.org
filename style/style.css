@@ -318,7 +318,8 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content:space-around ;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .info_div {
@@ -381,7 +382,6 @@ header {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
 }
 
@@ -390,7 +390,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 45%;
+    width: 41%;
     border-top: 0.5rem solid #3776ab;
     padding: 1.5rem;
     background-color: #f9f9f9;
@@ -430,7 +430,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 45%;
+    width: 41%;
     border-top: 0.5rem solid #3776ab;
     padding: 1.5rem;
     background-color: #f9f9f9;
@@ -463,4 +463,82 @@ header {
 
 .upcoming-events-link:hover {
     text-decoration: underline;
+}
+
+/* General Section Styling */
+.success-stories,
+.use-python {
+    border-top: 0.5rem solid #3776ab;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+}
+
+.success-stories h2,
+.use-python h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+
+/* Success Stories */
+.success-stories,
+.use-python {
+    width: 41%;
+    height: 40rem;
+}
+
+.story-box {
+    width: 95%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #555;
+    background-color: #ffe495;
+    border-radius: 1rem;
+
+}
+
+.story-link {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #3776ab;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.story-link:hover {
+    text-decoration: underline;
+}
+
+/* Use Python For... */
+
+.use-python-list {
+    list-style: none;
+    padding: 0;
+}
+
+.use-python-list li {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.use-python-list strong {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.use-python-list span {
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.2rem 0.6rem;
+    background-color: #e6e6e6;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
 }
